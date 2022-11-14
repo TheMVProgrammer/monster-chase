@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveForce = 10f; // The variable that we are going to use to move the player.
-
-    public float jumpForce = 11f;
-
+    public float moveForce = 10f; // Variable that we are going to use to move the player.
+                                     
+    public float jumpForce = 11f; // Variable that we are going to use to manage jump movement.
+   
     private float movementX;
 
     private Rigidbody rb;
