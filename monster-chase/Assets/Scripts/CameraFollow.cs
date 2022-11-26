@@ -20,7 +20,9 @@ public class CameraFollow : MonoBehaviour
     void LateUpdate()
     {
         tempPos = transform.position; // Current position of the camera
-        tempPos.x = player.position.x; // Sets x axis current position of the camera = player's current x axis position
+
+        if(player != null)
+            tempPos.x = player.position.x; // Sets x axis current position of the camera = player's current x axis position
         
         if(tempPos.x < minX) { tempPos.x = minX; } // Here we set the camera limits 
         if(tempPos.x > maxX) { tempPos.x = maxX; } // Here we set the camera limits
